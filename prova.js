@@ -4,7 +4,7 @@ const object = {name:'John', surname:"Denver"};
 
 const server = http.createServer((request,response) =>{
 console.log("I hear you thank you for a request");
-response.setHeader("Content-Type","text/json");
+response.setHeader("Content-Type","application/json");
 response.end(object);
 });
 
