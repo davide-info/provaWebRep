@@ -1,4 +1,6 @@
 const a = 4 ;
-const myModule = require('fs');
+const http = require('http');
+const server = http.createServer(() =>{
+console.log("I hear you thank you for a request");
 
-console.log(myModule);
+});
