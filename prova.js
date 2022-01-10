@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 app.get('/', (req,resp)=>{
-    console.log("QUERY 1" + JSON.stringify(req.query));
+    console.log("QUERY 1" + JSON.stringify(req.path));
 resp.send("hello");
 
 });
