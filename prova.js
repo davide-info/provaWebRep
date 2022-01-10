@@ -1,2 +1,4 @@
 const a = 4 ;
-console.log(__dirname);
+const myModule = require('fs');
+
+console.log(myModule);
