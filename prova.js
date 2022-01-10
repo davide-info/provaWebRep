@@ -8,6 +8,8 @@ resp.send("hello");
 
 });
 
-
+app.get("/profile" , (req,resp)=>{
+    resp.send("My profile");
+});
 
 app.listen(3000);
