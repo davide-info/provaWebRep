@@ -3,6 +3,11 @@ const http = require('http');
 
 const express=require('express');
 const app=express();
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
+
 app.get('/', (req,resp)=>{
     console.log("QUERY 1" + req.query);
 resp.send("hello");
